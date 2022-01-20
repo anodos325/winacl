@@ -915,19 +915,19 @@ main(int argc, char **argv)
 		case 'c':
 			w.chroot = realpath(optarg, NULL);
 			if (w.chroot == NULL)
-				err(EX_OSERR, "%s: realpath() failed", optarg); 
+				err(EX_OSERR, "%s: realpath() failed", optarg);
 			break;
 
 		case 's':
 			w.source = realpath(optarg, NULL);
 			if (w.source == NULL)
-				err(EX_OSERR, "%s: realpath() failed", optarg); 
+				err(EX_OSERR, "%s: realpath() failed", optarg);
 			break;
 
 		case 'p':
 			w.path = realpath(optarg, NULL);
 			if (w.path == NULL)
-				err(EX_OSERR, "%s: realpath() failed", optarg); 
+				err(EX_OSERR, "%s: realpath() failed", optarg);
 			break;
 
 		case 'r':
